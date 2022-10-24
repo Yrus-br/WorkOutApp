@@ -35,27 +35,27 @@ final class TabBarController: UITabBarController {
         tabBar.layer.borderWidth = 1
         tabBar.layer.masksToBounds = true
         
-        let overviewController = UIViewController()
-        let sessionController = UIViewController()
-        let progressController = UIViewController()
-        let settingsController = UIViewController()
+        let overviewController = OverviewController()
+        let sessionController = OverviewController()
+        let progressController = OverviewController()
+        let settingsController = OverviewController()
         
-        let overviewNavigation = UINavigationController(rootViewController: overviewController)
-        let sessionNavigation = UINavigationController(rootViewController: sessionController)
-        let progressNavigation = UINavigationController(rootViewController: progressController)
-        let settingsNavigation = UINavigationController(rootViewController: settingsController)
+        let overviewNavigation = NavBarController(rootViewController: overviewController)
+        let sessionNavigation = NavBarController(rootViewController: sessionController)
+        let progressNavigation = NavBarController(rootViewController: progressController)
+        let settingsNavigation = NavBarController(rootViewController: settingsController)
         
         overviewNavigation.tabBarItem = UITabBarItem(title: Resources.String.Tabbar.overview,
-                                                     image: nil,
+                                                     image: UIImage(systemName: "person"),
                                                      tag: Tabs.overwiev.rawValue)
         sessionNavigation.tabBarItem = UITabBarItem(title: Resources.String.Tabbar.session,
-                                                    image: nil,
+                                                    image: UIImage(systemName: "person"),
                                                     tag: Tabs.session.rawValue)
         progressNavigation.tabBarItem = UITabBarItem(title: Resources.String.Tabbar.progress,
-                                                     image: nil,
+                                                     image: UIImage(systemName: "person"),
                                                      tag: Tabs.progress.rawValue)
         settingsNavigation.tabBarItem = UITabBarItem(title: Resources.String.Tabbar.settings,
-                                                     image: nil,
+                                                     image: UIImage(systemName: "person"),
                                                      tag: Tabs.settings.rawValue)
         
         setViewControllers([

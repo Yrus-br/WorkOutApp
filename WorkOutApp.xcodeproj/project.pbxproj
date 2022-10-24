@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F3210EE29069B4600193D8D /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3210ED29069B4600193D8D /* NavBarController.swift */; };
+		3F3210F229069DEA00193D8D /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3210F129069DEA00193D8D /* BaseController.swift */; };
 		3FEDE52828FC80A800E61CB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEDE52728FC80A800E61CB8 /* AppDelegate.swift */; };
 		3FEDE52A28FC80A800E61CB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEDE52928FC80A800E61CB8 /* SceneDelegate.swift */; };
-		3FEDE52C28FC80A800E61CB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEDE52B28FC80A800E61CB8 /* ViewController.swift */; };
+		3FEDE52C28FC80A800E61CB8 /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEDE52B28FC80A800E61CB8 /* OverviewController.swift */; };
 		3FEDE53128FC80A900E61CB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FEDE53028FC80A900E61CB8 /* Assets.xcassets */; };
 		3FEDE53428FC80A900E61CB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FEDE53228FC80A900E61CB8 /* LaunchScreen.storyboard */; };
 		3FEDE53E28FC83E300E61CB8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEDE53D28FC83E300E61CB8 /* TabBarController.swift */; };
@@ -18,10 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F3210ED29069B4600193D8D /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
+		3F3210F129069DEA00193D8D /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		3FEDE52428FC80A800E61CB8 /* WorkOutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkOutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FEDE52728FC80A800E61CB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FEDE52928FC80A800E61CB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3FEDE52B28FC80A800E61CB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FEDE52B28FC80A800E61CB8 /* OverviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewController.swift; sourceTree = "<group>"; };
 		3FEDE53028FC80A900E61CB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FEDE53328FC80A900E61CB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FEDE53528FC80A900E61CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,6 +45,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F3210EF29069DA400193D8D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3F3210F029069DBE00193D8D /* Base */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3F3210F029069DBE00193D8D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3FEDE53D28FC83E300E61CB8 /* TabBarController.swift */,
+				3F3210ED29069B4600193D8D /* NavBarController.swift */,
+				3F3210F129069DEA00193D8D /* BaseController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		3FEDE51B28FC80A800E61CB8 = {
 			isa = PBXGroup;
 			children = (
@@ -62,8 +84,8 @@
 			children = (
 				3FEDE53B28FC816400E61CB8 /* Application */,
 				3FEDE53C28FC819600E61CB8 /* SupportingFiles */,
-				3FEDE52B28FC80A800E61CB8 /* ViewController.swift */,
-				3FEDE53D28FC83E300E61CB8 /* TabBarController.swift */,
+				3FEDE52B28FC80A800E61CB8 /* OverviewController.swift */,
+				3F3210EF29069DA400193D8D /* Controllers */,
 				3FEDE53F28FC84A100E61CB8 /* Helpers */,
 			);
 			path = WorkOutApp;
@@ -175,11 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FEDE52C28FC80A800E61CB8 /* ViewController.swift in Sources */,
+				3FEDE52C28FC80A800E61CB8 /* OverviewController.swift in Sources */,
 				3FEDE54128FC84B500E61CB8 /* UIColor + extension.swift in Sources */,
 				3FEDE53E28FC83E300E61CB8 /* TabBarController.swift in Sources */,
+				3F3210EE29069B4600193D8D /* NavBarController.swift in Sources */,
 				3FEDE54528FC85B000E61CB8 /* Resources.swift in Sources */,
 				3FEDE52828FC80A800E61CB8 /* AppDelegate.swift in Sources */,
+				3F3210F229069DEA00193D8D /* BaseController.swift in Sources */,
 				3FEDE52A28FC80A800E61CB8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
