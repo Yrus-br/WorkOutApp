@@ -20,7 +20,7 @@ enum Resources {
         enum Tabbar {
             static var overview = "Overview"
             static var session = "Session"
-            static var progress = "Srogress"
+            static var progress = "Progress"
             static var settings = "Settings"
         }
         

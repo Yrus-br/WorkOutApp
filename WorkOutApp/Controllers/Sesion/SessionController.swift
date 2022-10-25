@@ -13,5 +13,9 @@ class SessionController: BaseController {
         super.viewDidLoad()
         
         title = "High Intensity Cardio"
+        navigationController?.navigationItem.title = Resources.String.Tabbar.session
+        
+        addNavBarButton(at: .left, title: "Pause")
+        addNavBarButton(at: .right, title: "Finish")
     }
 }
