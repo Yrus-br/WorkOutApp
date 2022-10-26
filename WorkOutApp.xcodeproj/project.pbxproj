@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0AE0B82909ABC4001DEF1A /* SecondatyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0AE0B72909ABC4001DEF1A /* SecondatyButton.swift */; };
 		3F3210EE29069B4600193D8D /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3210ED29069B4600193D8D /* NavBarController.swift */; };
 		3F3210F229069DEA00193D8D /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3210F129069DEA00193D8D /* BaseController.swift */; };
 		3F3210F42908504A00193D8D /* UIView + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3210F32908504A00193D8D /* UIView + extension.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F0AE0B72909ABC4001DEF1A /* SecondatyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondatyButton.swift; sourceTree = "<group>"; };
 		3F3210ED29069B4600193D8D /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		3F3210F129069DEA00193D8D /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		3F3210F32908504A00193D8D /* UIView + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + extension.swift"; sourceTree = "<group>"; };
@@ -53,6 +55,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F0AE0B62909AB99001DEF1A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3FEDE52B28FC80A800E61CB8 /* OverviewController.swift */,
+				3F0AE0B72909ABC4001DEF1A /* SecondatyButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		3F3210EF29069DA400193D8D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,7 +97,7 @@
 		3F3210F62908544100193D8D /* Overview */ = {
 			isa = PBXGroup;
 			children = (
-				3FEDE52B28FC80A800E61CB8 /* OverviewController.swift */,
+				3F0AE0B62909AB99001DEF1A /* Views */,
 			);
 			path = Overview;
 			sourceTree = "<group>";
@@ -247,6 +258,7 @@
 				3F3210F42908504A00193D8D /* UIView + extension.swift in Sources */,
 				3FEDE53E28FC83E300E61CB8 /* TabBarController.swift in Sources */,
 				3F3210FA2908547100193D8D /* SessionController.swift in Sources */,
+				3F0AE0B82909ABC4001DEF1A /* SecondatyButton.swift in Sources */,
 				3F3210FC290854AD00193D8D /* ProgressController.swift in Sources */,
 				3F3210EE29069B4600193D8D /* NavBarController.swift in Sources */,
 				3FEDE54528FC85B000E61CB8 /* Resources.swift in Sources */,

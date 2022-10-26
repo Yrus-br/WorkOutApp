@@ -14,6 +14,7 @@ enum Resources {
         static var titleGray = UIColor(hexString: "#545C77")
         static var separator = UIColor(hexString: "#EBECEF")
         static var background = UIColor(hexString: "#F8F9F9")
+        static var secondary = UIColor(hexString: "F0F3FF ")
     }
     
     enum String {
