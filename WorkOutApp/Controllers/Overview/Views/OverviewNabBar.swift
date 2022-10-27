@@ -15,7 +15,6 @@ final class OverviewNabBar: BaseView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
         addButtonBorder(with: Resources.Colors.separator, and: 1)
     }
     
@@ -69,8 +68,7 @@ extension OverviewNabBar {
         allWorkoutsButton.translatesAutoresizingMaskIntoConstraints = false
         allWorkoutsButton.setTitle(title: Resources.String.Tabbar.overview)
         
-        
         addButton.translatesAutoresizingMaskIntoConstraints = false
-        addButton.setImage(UIImage(systemName: "person"), for: .normal)
+        addButton.setImage(UIImage(systemName: "plus"), for: .normal)
     }
 }

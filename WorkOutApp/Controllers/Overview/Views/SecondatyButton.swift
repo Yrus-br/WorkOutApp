@@ -46,7 +46,6 @@ private extension SecondaryButton {
             label.centerYAnchor.constraint(equalTo: centerYAnchor),
             label.trailingAnchor.constraint(equalTo: iconView.leadingAnchor),
             label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10)
-            
         ])
     }
     
@@ -61,7 +60,7 @@ private extension SecondaryButton {
         
         
         iconView.translatesAutoresizingMaskIntoConstraints = false
-        iconView.image = UIImage(systemName: "plus")?.withRenderingMode(.alwaysTemplate)
+        iconView.image = Resources.Images.ButtonImages.downArrow?.withRenderingMode(.alwaysTemplate)
         iconView.tintColor = Resources.Colors.active
         
         makeSystem(self)

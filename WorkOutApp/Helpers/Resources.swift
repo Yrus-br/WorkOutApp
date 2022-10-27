@@ -28,11 +28,8 @@ enum Resources {
     }
     
     enum Images {
-        enum Tabbar {
-            static var overview = UIImage(named: "40031")
-            static var session = UIImage(named: "40031")
-            static var progress = UIImage(named: "40031")
-            static var settings = UIImage(named: "40031")
+        enum ButtonImages {
+            static var downArrow = UIImage(named: "downArrow")
         }
     }
     
