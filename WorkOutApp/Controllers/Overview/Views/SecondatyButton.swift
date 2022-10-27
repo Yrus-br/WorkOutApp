@@ -61,7 +61,7 @@ private extension SecondaryButton {
         
         
         iconView.translatesAutoresizingMaskIntoConstraints = false
-        iconView.image = UIImage(systemName: "Person")?.withRenderingMode(.alwaysTemplate)
+        iconView.image = UIImage(systemName: "plus")?.withRenderingMode(.alwaysTemplate)
         iconView.tintColor = Resources.Colors.active
         
         makeSystem(self)
