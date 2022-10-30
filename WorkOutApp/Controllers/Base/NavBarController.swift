@@ -25,6 +25,4 @@ final class NavBarController: UINavigationController {
         
         navigationBar.addButtonBorder(with: Resources.Colors.separator, and: 1)
     }
-
-    
 }

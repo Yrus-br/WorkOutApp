@@ -22,7 +22,6 @@ final class OverviewNabBar: BaseView {
         return view
     }()
     
-    
     override func layoutSubviews() {
         super.layoutSubviews()
         addButtonBorder(with: Resources.Colors.separator, and: 1)

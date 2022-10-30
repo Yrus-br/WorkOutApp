@@ -19,8 +19,6 @@ class BaseController: UIViewController {
         addViews()
         layoutViews()
     }
-    
-    
 }
 
 @objc extension BaseController {
@@ -32,11 +30,9 @@ class BaseController: UIViewController {
     func configure() {
         view.backgroundColor = Resources.Colors.background
     }
-    
     func navBarLeftButtonHandler() {
         print("NavBar Left Button tapped")
     }
-    
     func navBarRightButtonHandler() {
         print("NavBar Right Button tapped")
     }
