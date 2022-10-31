@@ -73,8 +73,8 @@ extension OverviewNabBar {
         ])
     }
     
-    override func configure() {
-        super.configure()
+    override func configureViews() {
+        super.configureViews()
         backgroundColor = .white
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false

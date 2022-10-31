@@ -16,6 +16,7 @@
 		3F3210FA2908547100193D8D /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3210F92908547100193D8D /* SessionController.swift */; };
 		3F3210FC290854AD00193D8D /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3210FB290854AD00193D8D /* ProgressController.swift */; };
 		3F3210FE290854CD00193D8D /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3210FD290854CD00193D8D /* SettingsController.swift */; };
+		3FC93A8429105EB1003B305C /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC93A8329105EB1003B305C /* WeekView.swift */; };
 		3FEDE52828FC80A800E61CB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEDE52728FC80A800E61CB8 /* AppDelegate.swift */; };
 		3FEDE52A28FC80A800E61CB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEDE52928FC80A800E61CB8 /* SceneDelegate.swift */; };
 		3FEDE52C28FC80A800E61CB8 /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEDE52B28FC80A800E61CB8 /* OverviewController.swift */; };
@@ -36,6 +37,7 @@
 		3F3210F92908547100193D8D /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		3F3210FB290854AD00193D8D /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		3F3210FD290854CD00193D8D /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		3FC93A8329105EB1003B305C /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		3FEDE52428FC80A800E61CB8 /* WorkOutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkOutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FEDE52728FC80A800E61CB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FEDE52928FC80A800E61CB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,8 +64,9 @@
 		3F0AE0B62909AB99001DEF1A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3F0AE0B72909ABC4001DEF1A /* SecondatyButton.swift */,
 				3F0AE0B92909B539001DEF1A /* OverviewNabBar.swift */,
+				3F0AE0B72909ABC4001DEF1A /* SecondatyButton.swift */,
+				3FC93A8229105E72003B305C /* weekView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,6 +125,14 @@
 				3F3210FD290854CD00193D8D /* SettingsController.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		3FC93A8229105E72003B305C /* weekView */ = {
+			isa = PBXGroup;
+			children = (
+				3FC93A8329105EB1003B305C /* WeekView.swift */,
+			);
+			path = weekView;
 			sourceTree = "<group>";
 		};
 		3FEDE51B28FC80A800E61CB8 = {
@@ -258,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FC93A8429105EB1003B305C /* WeekView.swift in Sources */,
 				3F3210FE290854CD00193D8D /* SettingsController.swift in Sources */,
 				3FEDE52C28FC80A800E61CB8 /* OverviewController.swift in Sources */,
 				3FEDE54128FC84B500E61CB8 /* UIColor + extension.swift in Sources */,
