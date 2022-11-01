@@ -12,15 +12,7 @@ final class OverviewNabBar: BaseView {
     private let titleLabel = UILabel()
     private let allWorkoutsButton = SecondaryButton()
     private let addButton = UIButton()
-    
-    private var weekView: UIView = {
-        
-        let view = UIView()
-        
-        view.backgroundColor = .blue.withAlphaComponent(0.2)
-        
-        return view
-    }()
+    private var weekView = WeekView()
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -40,10 +32,10 @@ extension OverviewNabBar {
     override func addViews() {
         super.addViews()
         
-        addSubview(allWorkoutsButton)
-        addSubview(titleLabel)
-        addSubview(addButton)
-        addSubview(weekView)
+        addView(allWorkoutsButton)
+        addView(titleLabel)
+        addView(addButton)
+        addView(weekView)
     }
     
     override func layoutViews() {
@@ -77,17 +69,12 @@ extension OverviewNabBar {
         super.configureViews()
         backgroundColor = .white
         
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.text = Resources.String.Tabbar.overview
         titleLabel.textColor = Resources.Colors.titleGray
         titleLabel.font = Resources.Fonts.helveticaRegular(with: 22 )
         
-        allWorkoutsButton.translatesAutoresizingMaskIntoConstraints = false
         allWorkoutsButton.setTitle(title: Resources.String.Tabbar.overview)
         
-        addButton.translatesAutoresizingMaskIntoConstraints = false
         addButton.setImage(UIImage(systemName: "plus"), for: .normal)
-        
-        weekView.translatesAutoresizingMaskIntoConstraints = false
-    }
+        }
 }
