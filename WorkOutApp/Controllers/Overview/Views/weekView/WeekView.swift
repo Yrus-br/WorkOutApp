@@ -8,9 +8,7 @@
 import UIKit
 
 final class WeekView: BaseView {
-    
     private let calendar = Calendar.current
-    
     private let stackView = UIStackView()
     
 }

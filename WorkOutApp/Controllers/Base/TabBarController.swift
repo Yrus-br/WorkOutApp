@@ -70,6 +70,6 @@ final class TabBarController: UITabBarController {
             sessionNavigation,
             progressNavigation,
             settingsNavigation
-        ], animated: false)
+        ], animated: true)
     }
 }
