@@ -15,8 +15,20 @@ extension WeekView {
         private let stackView = UIStackView()
         
         func configure(with index: Int, and name: String) {
-            nameLabel.text = name
-            dateLabel.text = "\(index)"
+            
+            let startWeek = Date().startOfWeek
+            let currentDay = startWeek.agoForward(to: index)
+            let day = Calendar.current.component(.day, from: currentDay)
+            
+            let isToday = currentDay.stripTime() == Date().stripTime()
+            
+            backgroundColor = isToday ? Resources.Colors.active : Resources.Colors.background
+            
+            nameLabel.text = name.uppercased()
+            nameLabel.textColor = isToday ? .white : Resources.Colors.inActive
+            
+            dateLabel.text = "\(day)"
+            dateLabel.textColor = isToday ? .white : Resources.Colors.inActive
         }
     }
 }
