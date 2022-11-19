@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum Tabs: Int {
+enum Tabs: Int, CaseIterable {
     case overwiev
     case session
     case progress
@@ -19,18 +19,17 @@ final class TabBarController: UITabBarController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
-        configure()
+        configureAppereance()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func configure() {
+    private func configureAppereance() {
         tabBar.tintColor = Resources.Colors.active
         tabBar.barTintColor = Resources.Colors.inActive
         tabBar.backgroundColor = .white
-        
         tabBar.layer.borderColor = Resources.Colors.separator.cgColor
         tabBar.layer.borderWidth = 1
         tabBar.layer.masksToBounds = true
@@ -71,5 +70,18 @@ final class TabBarController: UITabBarController {
             progressNavigation,
             settingsNavigation
         ], animated: true)
+    }
+    
+    private func getController(for tab: Tabs) -> BaseController {
+        switch tab {
+        case .overwiev:
+            return OverviewController()
+        case .session:
+            return SessionController()
+        case .progress:
+            return ProgressController()
+        case .settings:
+            return SessionController()
+        }
     }
 }

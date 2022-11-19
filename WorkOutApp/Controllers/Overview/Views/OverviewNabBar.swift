@@ -29,8 +29,8 @@ final class OverviewNabBar: BaseView {
 }
 
 extension OverviewNabBar {
-    override func addViews() {
-        super.addViews()
+    override func setupViews() {
+        super.setupViews()
         
         addView(allWorkoutsButton)
         addView(titleLabel)
@@ -38,8 +38,8 @@ extension OverviewNabBar {
         addView(weekView)
     }
     
-    override func layoutViews() {
-        super.layoutViews()
+    override func constraintViews() {
+        super.constraintViews()
         
         NSLayoutConstraint.activate([
             addButton.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 8),
@@ -65,8 +65,8 @@ extension OverviewNabBar {
         ])
     }
     
-    override func configureViews() {
-        super.configureViews()
+    override func configureAppereance() {
+        super.configureAppereance()
         backgroundColor = .white
         
         titleLabel.text = Resources.String.Tabbar.overview
