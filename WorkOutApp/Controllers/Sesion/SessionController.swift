@@ -9,13 +9,36 @@ import UIKit
 
 class SessionController: BaseController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    private let timerView: BaseInfoView = {
+        let view = BaseInfoView(with: "Session")
+        return view
+    }()
+}
+
+extension SessionController {
+    
+    override func setupViews() {
+        super.setupViews()
+        view.addView(timerView)
+        addNavBarButton(at: .left, title: "Export")
+        addNavBarButton(at: .right, title: "Details")
+    }
+    
+    override func constraintViews() {
+        super.constraintViews()
         
-        title = "High Intensity Cardio"
-        navigationController?.navigationItem.title = Resources.String.Tabbar.session
+        NSLayoutConstraint.activate([
+            timerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
+            timerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15),
+            timerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
+            timerView.heightAnchor.constraint(equalToConstant: 300)
+        ])
+
+    }
+    
+    override func configureAppereance() {
+        super.configureAppereance()
         
-        addNavBarButton(at: .left, title: "Pause")
-        addNavBarButton(at: .right, title: "Finish")
     }
 }
+

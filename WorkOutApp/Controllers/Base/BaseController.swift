@@ -56,3 +56,9 @@ extension BaseController {
         }
     }
 }
+
+@objc extension BaseController {
+    func setupViews() {}
+    func constraintViews() {}
+    func configureAppereance() {}
+}
