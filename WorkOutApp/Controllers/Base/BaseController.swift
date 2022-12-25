@@ -15,6 +15,7 @@ class BaseController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         configure()
         addViews()
         layoutViews()
@@ -55,10 +56,4 @@ extension BaseController {
             navigationItem.rightBarButtonItem = UIBarButtonItem(customView: button)
         }
     }
-}
-
-@objc extension BaseController {
-    func setupViews() {}
-    func constraintViews() {}
-    func configureAppereance() {}
 }

@@ -9,7 +9,7 @@ import UIKit
 
 class OverviewController: BaseController {
     
-    private let navBar = OverviewNabBar()
+    private let navBar = OverviewNavBar()
 
     override func viewDidLoad() {
         super.viewDidLoad()

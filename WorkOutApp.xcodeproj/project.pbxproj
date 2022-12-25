@@ -17,6 +17,7 @@
 		3F3210FC290854AD00193D8D /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3210FB290854AD00193D8D /* ProgressController.swift */; };
 		3F3210FE290854CD00193D8D /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3210FD290854CD00193D8D /* SettingsController.swift */; };
 		3F42AC01292AEAC900059654 /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F42AC00292AEAC900059654 /* BaseInfoView.swift */; };
+		3FB003302958E72A00516A30 /* WAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB0032F2958E72A00516A30 /* WAButton.swift */; };
 		3FC93A8429105EB1003B305C /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC93A8329105EB1003B305C /* WeekView.swift */; };
 		3FDA98A229119738006736D1 /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA98A129119738006736D1 /* WeekdayView.swift */; };
 		3FEDE52828FC80A800E61CB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEDE52728FC80A800E61CB8 /* AppDelegate.swift */; };
@@ -41,6 +42,7 @@
 		3F3210FB290854AD00193D8D /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		3F3210FD290854CD00193D8D /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		3F42AC00292AEAC900059654 /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
+		3FB0032F2958E72A00516A30 /* WAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAButton.swift; sourceTree = "<group>"; };
 		3FC93A8329105EB1003B305C /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		3FDA98A129119738006736D1 /* WeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
 		3FEDE52428FC80A800E61CB8 /* WorkOutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkOutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 				3F3210F129069DEA00193D8D /* BaseController.swift */,
 				3F0AE0BB2909B5BE001DEF1A /* BaseView.swift */,
 				3F42AC00292AEAC900059654 /* BaseInfoView.swift */,
+				3FB0032F2958E72A00516A30 /* WAButton.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				3F3210EE29069B4600193D8D /* NavBarController.swift in Sources */,
 				3FEDE54528FC85B000E61CB8 /* Resources.swift in Sources */,
 				3FF1F4312922CFE1009F162A /* Date + Extension.swift in Sources */,
+				3FB003302958E72A00516A30 /* WAButton.swift in Sources */,
 				3F0AE0BA2909B539001DEF1A /* OverviewNabBar.swift in Sources */,
 				3FEDE52828FC80A800E61CB8 /* AppDelegate.swift in Sources */,
 				3F0AE0BC2909B5BE001DEF1A /* BaseView.swift in Sources */,

@@ -17,15 +17,13 @@ class SessionController: BaseController {
 
 extension SessionController {
     
-    override func setupViews() {
-        super.setupViews()
-        view.addView(timerView)
+    func setupViews() {
+        view.addSubview(timerView)
         addNavBarButton(at: .left, title: "Export")
         addNavBarButton(at: .right, title: "Details")
     }
     
-    override func constraintViews() {
-        super.constraintViews()
+    func constraintViews() {
         
         NSLayoutConstraint.activate([
             timerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
@@ -36,8 +34,7 @@ extension SessionController {
 
     }
     
-    override func configureAppereance() {
-        super.configureAppereance()
+    func configureAppereance() {
         
     }
 }
