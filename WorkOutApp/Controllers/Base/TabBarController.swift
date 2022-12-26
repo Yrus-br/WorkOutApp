@@ -8,80 +8,56 @@
 import UIKit
 
 enum Tabs: Int, CaseIterable {
-    case overwiev
+    case overview
     case session
     case progress
     case settings
 }
 
 final class TabBarController: UITabBarController {
-    
+
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        
-        configureAppereance()
+
+        configureAppearance()
+        switchTo(tab: .progress)
     }
-    
+
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
+        
+        configureAppearance()
     }
-    
-    private func configureAppereance() {
+
+    func switchTo(tab: Tabs) {
+        selectedIndex = tab.rawValue
+    }
+
+    private func configureAppearance() {
         tabBar.tintColor = Resources.Colors.active
         tabBar.barTintColor = Resources.Colors.inActive
         tabBar.backgroundColor = .white
         tabBar.layer.borderColor = Resources.Colors.separator.cgColor
         tabBar.layer.borderWidth = 1
         tabBar.layer.masksToBounds = true
-        
-        let overviewController = OverviewController()
-        let sessionController = SessionController()
-        let progressController = ProgressController()
-        let settingsController = SettingsController()
-        
-        let overviewNavigation = NavBarController(rootViewController: overviewController)
-        let sessionNavigation = NavBarController(rootViewController: sessionController)
-        let progressNavigation = NavBarController(rootViewController: progressController)
-        let settingsNavigation = NavBarController(rootViewController: settingsController)
-        
-        overviewNavigation.tabBarItem = UITabBarItem(
-            title: Resources.String.Tabbar.overview,
-            image: UIImage(systemName: "homekit"),
-            tag: Tabs.overwiev.rawValue
-        )
-        sessionNavigation.tabBarItem = UITabBarItem(
-            title: Resources.String.Tabbar.session,
-            image: UIImage(systemName: "alarm"),
-            tag: Tabs.session.rawValue
-        )
-        progressNavigation.tabBarItem = UITabBarItem(
-            title: Resources.String.Tabbar.progress,
-            image: UIImage(systemName: "align.vertical.bottom"),
-            tag: Tabs.progress.rawValue
-        )
-        settingsNavigation.tabBarItem = UITabBarItem(
-            title: Resources.String.Tabbar.settings,
-            image: UIImage(systemName: "gear"),
-            tag: Tabs.settings.rawValue
-        )
-        setViewControllers([
-            overviewNavigation,
-            sessionNavigation,
-            progressNavigation,
-            settingsNavigation
-        ], animated: true)
+
+        let controllers: [NavBarController] = Tabs.allCases.map { tab in
+            let controller = NavBarController(rootViewController: getController(for: tab))
+            controller.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.title(for: tab),
+                                                 image: Resources.Images.TabBar.icon(for: tab),
+                                                 tag: tab.rawValue)
+            return controller
+        }
+
+        setViewControllers(controllers, animated: false)
     }
-    
+
     private func getController(for tab: Tabs) -> BaseController {
         switch tab {
-        case .overwiev:
-            return OverviewController()
-        case .session:
-            return SessionController()
-        case .progress:
-            return ProgressController()
-        case .settings:
-            return SessionController()
+        case .overview: return OverviewController()
+        case .session: return SessionController()
+        case .progress: return ProgressController()
+        case .settings: return SettingsController()
         }
     }
 }

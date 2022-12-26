@@ -24,7 +24,7 @@ final class WAButton: UIButton {
 
     private let iconView: UIImageView = {
         let view = UIImageView()
-        view.image = Resources.Images.ButtonImages.downArrow
+        view.image = Resources.Images.Common.add
         return view
     }()
 

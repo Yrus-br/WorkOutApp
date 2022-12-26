@@ -10,22 +10,22 @@ import UIKit
 final class OverviewNavBar: BaseView {
 
     private let titleLabel: UILabel = {
-        let lable = UILabel()
-        lable.text = Resources.String.Tabbar.overview
-        lable.textColor = Resources.Colors.titleGray
-        lable.font = Resources.Fonts.helveticaRegular(with: 22)
-        return lable
+        let label = UILabel()
+        label.text = Resources.Strings.NavBar.overview
+        label.textColor = Resources.Colors.titleGray
+        label.font = Resources.Fonts.helveticaRegular(with: 22)
+        return label
     }()
 
     private let allWorkoutsButton: WAButton = {
         let button = WAButton(with: .secondary)
-        button.setTitle(Resources.String.Tabbar.overview)
+        button.setTitle(Resources.Strings.Overview.allWorcoutsButton)
         return button
     }()
 
     private let addButton: UIButton = {
         let button = UIButton()
-        button.setImage(Resources.Images.ButtonImages.downArrow, for: .normal)
+        button.setImage(Resources.Images.Common.add, for: .normal)
         return button
     }()
 
