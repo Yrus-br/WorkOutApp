@@ -10,13 +10,16 @@
 		3F0AE0B82909ABC4001DEF1A /* SecondatyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0AE0B72909ABC4001DEF1A /* SecondatyButton.swift */; };
 		3F0AE0BA2909B539001DEF1A /* OverviewNabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0AE0B92909B539001DEF1A /* OverviewNabBar.swift */; };
 		3F0AE0BC2909B5BE001DEF1A /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0AE0BB2909B5BE001DEF1A /* BaseView.swift */; };
-		3F3210EE29069B4600193D8D /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3210ED29069B4600193D8D /* NavBarController.swift */; };
 		3F3210F229069DEA00193D8D /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3210F129069DEA00193D8D /* BaseController.swift */; };
 		3F3210F42908504A00193D8D /* UIView + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3210F32908504A00193D8D /* UIView + extension.swift */; };
 		3F3210FA2908547100193D8D /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3210F92908547100193D8D /* SessionController.swift */; };
 		3F3210FC290854AD00193D8D /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3210FB290854AD00193D8D /* ProgressController.swift */; };
 		3F3210FE290854CD00193D8D /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3210FD290854CD00193D8D /* SettingsController.swift */; };
 		3F42AC01292AEAC900059654 /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F42AC00292AEAC900059654 /* BaseInfoView.swift */; };
+		3F4AB95329638C46008CCBAA /* BarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AB95229638C46008CCBAA /* BarsView.swift */; };
+		3F4AB95529638C71008CCBAA /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AB95429638C71008CCBAA /* BarView.swift */; };
+		3F4AB95729638D62008CCBAA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AB95629638D62008CCBAA /* TabBarController.swift */; };
+		3F4AB95929638DBA008CCBAA /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AB95829638DBA008CCBAA /* NavBarController.swift */; };
 		3FB003302958E72A00516A30 /* WAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB0032F2958E72A00516A30 /* WAButton.swift */; };
 		3FC93A8429105EB1003B305C /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC93A8329105EB1003B305C /* WeekView.swift */; };
 		3FDA98A229119738006736D1 /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA98A129119738006736D1 /* WeekdayView.swift */; };
@@ -25,7 +28,6 @@
 		3FEDE52C28FC80A800E61CB8 /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEDE52B28FC80A800E61CB8 /* OverviewController.swift */; };
 		3FEDE53128FC80A900E61CB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FEDE53028FC80A900E61CB8 /* Assets.xcassets */; };
 		3FEDE53428FC80A900E61CB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FEDE53228FC80A900E61CB8 /* LaunchScreen.storyboard */; };
-		3FEDE53E28FC83E300E61CB8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEDE53D28FC83E300E61CB8 /* TabBarController.swift */; };
 		3FEDE54128FC84B500E61CB8 /* UIColor + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEDE54028FC84B500E61CB8 /* UIColor + extension.swift */; };
 		3FEDE54528FC85B000E61CB8 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEDE54428FC85B000E61CB8 /* Resources.swift */; };
 		3FF1F4312922CFE1009F162A /* Date + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1F4302922CFE1009F162A /* Date + Extension.swift */; };
@@ -35,13 +37,16 @@
 		3F0AE0B72909ABC4001DEF1A /* SecondatyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondatyButton.swift; sourceTree = "<group>"; };
 		3F0AE0B92909B539001DEF1A /* OverviewNabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNabBar.swift; sourceTree = "<group>"; };
 		3F0AE0BB2909B5BE001DEF1A /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
-		3F3210ED29069B4600193D8D /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		3F3210F129069DEA00193D8D /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		3F3210F32908504A00193D8D /* UIView + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + extension.swift"; sourceTree = "<group>"; };
 		3F3210F92908547100193D8D /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		3F3210FB290854AD00193D8D /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		3F3210FD290854CD00193D8D /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		3F42AC00292AEAC900059654 /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
+		3F4AB95229638C46008CCBAA /* BarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarsView.swift; sourceTree = "<group>"; };
+		3F4AB95429638C71008CCBAA /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
+		3F4AB95629638D62008CCBAA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		3F4AB95829638DBA008CCBAA /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		3FB0032F2958E72A00516A30 /* WAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAButton.swift; sourceTree = "<group>"; };
 		3FC93A8329105EB1003B305C /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		3FDA98A129119738006736D1 /* WeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
@@ -52,7 +57,6 @@
 		3FEDE53028FC80A900E61CB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FEDE53328FC80A900E61CB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FEDE53528FC80A900E61CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FEDE53D28FC83E300E61CB8 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		3FEDE54028FC84B500E61CB8 /* UIColor + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + extension.swift"; sourceTree = "<group>"; };
 		3FEDE54428FC85B000E61CB8 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		3FF1F4302922CFE1009F162A /* Date + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Extension.swift"; sourceTree = "<group>"; };
@@ -94,12 +98,14 @@
 		3F3210F029069DBE00193D8D /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				3FEDE53D28FC83E300E61CB8 /* TabBarController.swift */,
-				3F3210ED29069B4600193D8D /* NavBarController.swift */,
+				3F4AB95229638C46008CCBAA /* BarsView.swift */,
+				3F4AB95429638C71008CCBAA /* BarView.swift */,
 				3F3210F129069DEA00193D8D /* BaseController.swift */,
 				3F0AE0BB2909B5BE001DEF1A /* BaseView.swift */,
 				3F42AC00292AEAC900059654 /* BaseInfoView.swift */,
 				3FB0032F2958E72A00516A30 /* WAButton.swift */,
+				3F4AB95629638D62008CCBAA /* TabBarController.swift */,
+				3F4AB95829638DBA008CCBAA /* NavBarController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -284,15 +290,15 @@
 				3FC93A8429105EB1003B305C /* WeekView.swift in Sources */,
 				3F3210FE290854CD00193D8D /* SettingsController.swift in Sources */,
 				3FEDE52C28FC80A800E61CB8 /* OverviewController.swift in Sources */,
+				3F4AB95929638DBA008CCBAA /* NavBarController.swift in Sources */,
 				3FEDE54128FC84B500E61CB8 /* UIColor + extension.swift in Sources */,
 				3F3210F42908504A00193D8D /* UIView + extension.swift in Sources */,
-				3FEDE53E28FC83E300E61CB8 /* TabBarController.swift in Sources */,
 				3F3210FA2908547100193D8D /* SessionController.swift in Sources */,
 				3F0AE0B82909ABC4001DEF1A /* SecondatyButton.swift in Sources */,
 				3F3210FC290854AD00193D8D /* ProgressController.swift in Sources */,
 				3F42AC01292AEAC900059654 /* BaseInfoView.swift in Sources */,
-				3F3210EE29069B4600193D8D /* NavBarController.swift in Sources */,
 				3FEDE54528FC85B000E61CB8 /* Resources.swift in Sources */,
+				3F4AB95329638C46008CCBAA /* BarsView.swift in Sources */,
 				3FF1F4312922CFE1009F162A /* Date + Extension.swift in Sources */,
 				3FB003302958E72A00516A30 /* WAButton.swift in Sources */,
 				3F0AE0BA2909B539001DEF1A /* OverviewNabBar.swift in Sources */,
@@ -300,6 +306,8 @@
 				3F0AE0BC2909B5BE001DEF1A /* BaseView.swift in Sources */,
 				3FDA98A229119738006736D1 /* WeekdayView.swift in Sources */,
 				3F3210F229069DEA00193D8D /* BaseController.swift in Sources */,
+				3F4AB95729638D62008CCBAA /* TabBarController.swift in Sources */,
+				3F4AB95529638C71008CCBAA /* BarView.swift in Sources */,
 				3FEDE52A28FC80A800E61CB8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
